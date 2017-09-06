@@ -24,8 +24,7 @@ class App extends Component {
   }
 
   deleteReminder(id) {
-    console.log('deleting in app id', id);
-    console.log('lemme see this.props', this.props)
+    this.props.deleteReminder(id);
   }
 
   renderReminders() {
@@ -69,4 +68,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps, { addReminder })(App);
+export default connect(mapStateToProps, { addReminder, deleteReminder })(App);

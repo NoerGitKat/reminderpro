@@ -15,5 +15,5 @@ export const deleteReminder = (id) => {
 		id
 	}
 	console.log('deleting in actions', action);
-	return action
+	return action;
 }
